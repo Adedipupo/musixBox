@@ -1,0 +1,54 @@
+#collasible-nav-dropdown {
+  color: #fff;
+}
+.navbar-toggler-icon {
+  display: inline-block;
+  width: 1.3em !important;
+  height: 1.3em !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+.dropdown-menu {
+  position: absolute;
+  z-index: 1000;
+  display: none;
+  min-width: 10rem;
+  padding: 0.5rem 0;
+  margin: 0;
+  font-size: 1rem;
+  color: #fff;
+  text-align: left;
+  list-style: none;
+  background-color: #3a3b3e;
+
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
+  left: -3rem;
+}
+@media (max-width: 1000px) {
+  .dropdown-menu {
+    position: absolute;
+    z-index: 1000;
+    display: none;
+    min-width: 10rem;
+    padding: 0.5rem 0;
+    margin: 0;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: #3a3b3e;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 0.25rem;
+    left: 1rem;
+  }
+}
+@media (max-width: 500px) {
+  .fa-play:before {
+    content: '\f04b';
+    font-size: smaller;
+  }
+}

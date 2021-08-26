@@ -1,0 +1,62 @@
+.albums {
+  margin-top: 60px;
+}
+.singleGenreCard {
+  background-color: #9b2def;
+  padding: 32px 10px;
+  margin: 9px auto;
+  width: 145px;
+  height: 145px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  position: relative;
+}
+.albumLink {
+  text-decoration: none;
+  color: #fff;
+}
+.albumLink:hover {
+  text-decoration: none;
+  color: #fff;
+}
+.about {
+  font-size: 11px;
+  color: #99999f;
+}
+.name {
+  font-size: 12px;
+}
+
+.singleGenreGrid {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: auto;
+  gap: 20px;
+}
+
+.singleGenreDiv {
+  margin-bottom: 50px;
+  max-width: 145px;
+}
+.left {
+  display: inline-block;
+}
+.right {
+  display: inline;
+  float: right;
+  color: #d5d5d5;
+  font-size: 12px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.right * {
+  fill: #99999f !important;
+  font-size: 20px;
+}
+@media (max-width: 500px) {
+  .singleGenreGrid {
+    flex-wrap: nowrap;
+  }
+}

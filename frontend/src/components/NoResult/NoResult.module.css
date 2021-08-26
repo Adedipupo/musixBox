@@ -1,0 +1,69 @@
+.Modal {
+  border-radius: 15rem;
+}
+
+.modalheader {
+  border: none;
+  background: #161a1a;
+  border-radius: 5px;
+}
+.modalContent {
+  border-radius: 5px;
+  background: #161a1a;
+  text-align: center;
+  color: white;
+}
+.noResult {
+  height: 60px;
+  color: var(--unnamed-color-2dceef);
+  text-align: center;
+  font: normal normal 900 50px/60px Lato;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+  opacity: 1;
+}
+
+.text {
+  height: 22px;
+  text-align: center;
+  color: #ff00ff;
+  font: normal normal normal 18px/22px Lato;
+  letter-spacing: 0.11px;
+  opacity: 1;
+}
+.text2 {
+  text-align: center;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+  opacity: 1;
+}
+
+@media (max-width: 767px) {
+  .modalContent {
+    text-align: center;
+    /* margin-bottom: 4rem; */
+  }
+  .noResult {
+    height: 60px;
+    text-align: center;
+    font: normal normal 900 50px/60px Lato;
+    letter-spacing: 0.5px;
+    color: #ffffff;
+    opacity: 1;
+  }
+
+  .text {
+    height: 22px;
+    text-align: center;
+    color: white;
+    font: normal normal normal 18px/22px Lato;
+    letter-spacing: 0.11px;
+    opacity: 1;
+  }
+  .text2 {
+    text-align: center;
+    letter-spacing: 0.5px;
+    color: #2dceef;
+    opacity: 1;
+  }
+}

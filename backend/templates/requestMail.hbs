@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <style>
+        a{
+            width: 150px;
+            text-decoration: none;
+            text-align: center;
+            vertical-align: center;
+            padding: 10px 20px;
+            background-color: rgb(255, 253, 253);
+            color: red !important;
+            border-radius: 4px;
+            margin-top: 50px;
+        }
+       a span{
+            color: #red;
+            font-weight: bold;
+        }
+    </style>
+    <title>Password Reset</title>
+</head>
+<body>
+   <h2>Hello, {{name}}</h2> 
+   <p>You are receiving this mail because you have just requested to reset your password. </p>
+   <p>Click the button below to reset your password, or you can ignore if you did not initiate this request. 
+   <br /> Token expires in 1hr.
+    </p>
+    <a href={{link}} target="_blank">
+        Reset Password
+    </a>
+</body>

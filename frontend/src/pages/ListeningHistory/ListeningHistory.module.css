@@ -1,0 +1,292 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapperDiv {
+  margin-bottom: 2rem;
+}
+.no-played-text {
+  text-align: center;
+  font-size: 18px;
+  background: linear-gradient(269deg, #9b2def 0%, #2d9bef 61%, #35edfb 100%) 0% 0% no-repeat padding-box;
+  border-radius: 25px;
+  padding: 0.7rem;
+  margin: 150px auto;
+  width: 40%;
+}
+
+.popularBody {
+  margin-top: 50px;
+  font-size: 12px;
+  padding: 50px 150px;
+}
+
+.popularBody * {
+  color: white !important;
+}
+
+.popularTable {
+  width: 100%;
+}
+
+.grid {
+  display: grid;
+  margin-top: 1.2rem;
+  grid-template-columns: 1fr 1fr;
+}
+
+.right {
+  justify-self: right;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+th {
+  text-transform: uppercase;
+  color: #99999f;
+}
+
+table,
+th,
+td {
+  /* border: 1px solid black; */
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 15px;
+  text-align: left;
+}
+
+td {
+  cursor: pointer;
+}
+
+tr > th:nth-child(1) {
+  width: 4%;
+}
+tr > th:nth-child(2) {
+  width: 3%;
+}
+
+tr > th:nth-child(3) {
+  width: 26%;
+}
+
+tr > th:nth-child(4) {
+  width: 22%;
+}
+
+tr > th:nth-child(5) {
+  width: 28%;
+}
+
+tr > th:nth-child(6) {
+  width: 5%;
+}
+
+tr > th:nth-child(7) {
+  width: 10%;
+}
+
+tr > th:nth-child(8) {
+  width: 6%;
+}
+
+tr > td:nth-child(1) {
+  float: right;
+  color: #99999f;
+}
+
+tr > td:nth-child(2) {
+  color: #99999f;
+}
+
+img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+tr > td:nth-child(4) {
+  color: #99999f;
+}
+
+tr > td:nth-child(5) {
+  color: #99999f;
+}
+
+.dots {
+  display: none !important;
+}
+
+.smallCard {
+  background: #9b2def;
+  border: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.titleFlex {
+  display: flex;
+}
+
+.tableRow {
+  position: relative;
+}
+
+.tableRow:hover {
+  background-color: #3a3b3f;
+}
+
+.iconBox {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+
+.currentSong {
+  background-color: #3a3b3f;
+}
+
+.playerIcon {
+  position: absolute;
+  left: calc(100% - 270px);
+  top: 15px;
+}
+
+.isPlayingIcon {
+  margin-left: 10px;
+}
+.playIcon {
+  font-size: 90px;
+}
+
+@media (max-width: 1000px) {
+  .popularBody {
+    padding: 25px 15px;
+  }
+
+  .dots {
+    display: block !important;
+  }
+
+  .add {
+    display: none !important;
+  }
+
+  th {
+    display: none;
+  }
+
+  tr > td:nth-child(1),
+  tr > td:nth-child(3),
+  tr > td:nth-child(4) {
+    display: none;
+  }
+}
+
+@media (max-width: 1218px) {
+  .playerIcon {
+    left: calc(100% - 240px);
+  }
+
+  .isPlayingIcon {
+    left: calc(100% - 190px);
+  }
+}
+
+@media (max-width: 1157px) {
+  .playerIcon {
+    left: calc(100% - 200px);
+    /* top: 15px */
+  }
+
+  .isPlayingIcon {
+    left: calc(100% - 160px);
+    /* top: 15px */
+  }
+}
+
+@media (max-width: 1083px) {
+  .playerIcon {
+    left: calc(100% - 180px);
+  }
+
+  .isPlayingIcon {
+    left: calc(100% - 140px);
+  }
+}
+
+@media (max-width: 1037px) {
+  .playerIcon {
+    left: calc(100% - 170px);
+  }
+
+  .isPlayingIcon {
+    left: calc(100% - 135px);
+  }
+}
+
+@media (max-width: 646px) {
+  .playerIcon {
+    left: calc(100% - 120px);
+  }
+
+  .isPlayingIcon {
+    left: calc(100% - 80px);
+  }
+}
+
+@media (max-width: 501px) {
+  .playerIcon {
+    left: calc(100% - 100px);
+  }
+
+  .playIcon {
+    font-size: 10px;
+  }
+
+  .isPlayingIcon {
+    left: calc(100% - 60px);
+  }
+}
+
+@media (max-width: 458px) {
+  .playerIcon {
+    left: calc(100% - 80px);
+  }
+
+  .playIcon {
+    font-size: 10px;
+  }
+
+  .isPlayingIcon {
+    left: calc(100% - 60px);
+  }
+}
+
+@media (max-width: 390px) {
+  .playerIcon {
+    left: calc(100% - 65px);
+  }
+
+  .playIcon {
+    font-size: 10px;
+  }
+
+  .isPlayingIcon {
+    left: calc(100% - 45px);
+  }
+}

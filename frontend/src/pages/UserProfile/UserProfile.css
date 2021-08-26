@@ -1,0 +1,166 @@
+.div-container {
+  padding: 60px 350px;
+}
+
+@media (max-width: 1281px) {
+  .div-container {
+    padding: 50px 150px;
+  }
+}
+
+.profile-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.premium-btn {
+  border: none;
+  padding: 1px 4px;
+  width: 150px;
+  border-radius: 50px;
+  font-size: 12px;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(
+    135deg,
+    rgba(53, 237, 251, 1.9) 0%,
+    rgba(45, 155, 239, 1.9) 40%,
+    rgba(155, 45, 239, 1.9) 100%
+  );
+  cursor: pointer;
+  text-transform: uppercase;
+  height: 50px;
+}
+
+.streaming-section *,
+form *,
+.button {
+  color: white !important;
+}
+
+.language {
+  width: 25px;
+}
+
+.language * {
+  color: rgb(123, 224, 123) !important;
+}
+
+.switch color {
+  background-color: #999 !important;
+}
+
+.title {
+  border-bottom: solid 1px white !important;
+}
+
+.button {
+  background: transparent
+    linear-gradient(269deg, var(--unnamed-color-9b2def) 0%, var(--unnamed-color-2d9bef) 61%, #35edfb 100%) 0% 0%
+    no-repeat padding-box;
+  background: transparent linear-gradient(269deg, #9b2def 0%, #2d9bef 61%, #35edfb 100%) 0% 0% no-repeat padding-box;
+  border-radius: 50px !important;
+  opacity: 1;
+}
+
+.profile-header {
+  margin: 3rem 0rem;
+}
+
+.sub-head {
+  margin-top: 1.5rem !important;
+}
+
+.social-login {
+  margin: 2rem 0;
+}
+
+.social-login .social-name {
+  color: white !important;
+}
+
+.social {
+  margin: 1rem 0;
+}
+
+.social-text {
+  color: #555 !important;
+}
+
+.streaming {
+  margin-bottom: 1rem !important;
+}
+
+.streaming-section {
+  margin: 1rem 0 !important;
+}
+
+.divider {
+  border-width: 0 0 1px 0 !important;
+  margin: 1rem 0;
+}
+
+.divider,
+.privacy {
+  opacity: 0.7 !important;
+}
+
+.streaming-section * {
+  opacity: 0.9;
+}
+
+.radio {
+  margin-bottom: 0.5rem;
+}
+
+.account-section * {
+  color: white !important;
+}
+
+.account-list-items {
+  display: grid !important;
+  grid-template-columns: 2fr 1fr !important;
+  margin-bottom: 10px;
+}
+
+.list-items {
+  margin-left: -18px;
+}
+
+.change-password:hover {
+  cursor: pointer !important;
+}
+
+.log-out {
+  margin: 0 auto !important;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 1024px) {
+  body {
+    background: #161a1a;
+  }
+
+  .profile-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    /*align-items: center;*/
+    grid-gap: 20px;
+  }
+
+  .div-container {
+    padding: 0 50px;
+    margin-top: 100px;
+  }
+
+  .premium-btn {
+    padding: 10px 4px;
+  }
+}

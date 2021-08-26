@@ -1,0 +1,150 @@
+.modalbg {
+  border: none;
+  margin-top: 3rem;
+  width: 100%;
+}
+
+.modalheader {
+  border: none;
+  color: #000;
+}
+
+.top {
+  margin-top: 1rem;
+  margin: auto;
+  font-weight: bold;
+  color: #000;
+}
+
+.buttonOone {
+  width: 80%;
+  height: 36px;
+  background: #4267b2 0% 0% no-repeat padding-box;
+  color: #fff;
+  border-radius: 20px;
+  opacity: 1;
+}
+
+.buttonTtwo {
+  width: 80%;
+  height: 36px;
+  background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 0.5px solid #121212;
+  border-radius: 20px;
+  opacity: 1;
+}
+
+.socialIconShow {
+  display: none;
+}
+
+.fbButton {
+  margin: 0 15px;
+  font-family: Lato;
+  text-align: center;
+  letter-spacing: 0.08px;
+}
+
+.gButton {
+  margin: 0 15px;
+  font-family: Lato;
+  text-align: center;
+  letter-spacing: 0.08px;
+}
+
+.btnTwo {
+  height: 17px;
+  color: #121212;
+  opacity: 1;
+}
+
+.login {
+  width: 180px;
+  height: 40px;
+  margin-right: 4rem;
+  background: #2d9bef 0% 0% no-repeat padding-box;
+  border-radius: 20px;
+  opacity: 1;
+}
+
+.noAccount {
+  margin-left: 3rem;
+}
+
+.signup {
+  width: 320px;
+}
+
+.Slogin {
+  width: 300px;
+  height: 40px;
+  color: #ffff;
+  background: #2d9bef 0% 0% no-repeat padding-box;
+  border-radius: 20px;
+  opacity: 1;
+}
+
+@media (max-width: 767px) {
+  .modalbg {
+    border: none;
+    margin-top: 2rem;
+    width: 100%;
+  }
+  .modalheader {
+    border: none;
+    color: #fff;
+  }
+  .top {
+    margin-top: 1rem;
+    margin: auto;
+    font-weight: bold;
+    color: #fff;
+  }
+  .buttonOone {
+    display: none;
+  }
+  .buttonTtwo {
+    display: none;
+  }
+  .login {
+    width: 150px;
+    height: 40px;
+    background: transparent;
+    border-radius: 20px;
+    margin-right: 4rem;
+    color: #fff;
+    border: 1px solid #ffffff;
+    opacity: 1;
+  }
+  .noAccount {
+    color: #fff;
+    margin-left: 1rem;
+  }
+  .Slogin {
+    width: 300px;
+    height: 40px;
+    color: #fff;
+    border: 1px solid #ffffff;
+    background: transparent;
+    border-radius: 20px;
+    opacity: 1;
+  }
+  .fbButton {
+    margin: 0 50px;
+    font-family: Lato;
+    text-align: center;
+    letter-spacing: 0.08px;
+  }
+  .gButton {
+    margin: 0 55px;
+    font-family: Lato;
+    text-align: center;
+    letter-spacing: 0.08px;
+  }
+  .socialIconShow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

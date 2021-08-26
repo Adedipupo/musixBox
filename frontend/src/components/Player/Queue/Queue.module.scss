@@ -1,0 +1,156 @@
+.Queue {
+  width: 300px;
+  max-height: calc(100vh - 180px);
+  position: fixed;
+  bottom: 90px;
+  background: #303033;
+  right: 30px;
+  padding: 10px 0;
+  color: #fff;
+  display: flex;
+  overflow: clip;
+  flex-direction: column;
+
+  .Queue_title {
+    font-weight: 400;
+    letter-spacing: 0.8px;
+    padding: 0 15px;
+  }
+
+  .close {
+    cursor: pointer;
+
+    * {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      color: white;
+    }
+  }
+
+  .upNext {
+    margin-top: 30px;
+    overflow: clip;
+    height: 450px;
+
+    .head {
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 15px;
+
+      div {
+        font-size: 0.95rem;
+      }
+
+      button {
+        outline: none;
+        border: 1.5px solid #fff;
+        border-radius: 30px;
+        padding: 3px 20px;
+        background: transparent;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+      }
+    }
+
+    .list {
+      overflow-y: auto;
+      max-height: 400px;
+      position: relative;
+      padding: 5px 0;
+      scrollbar-color: #fff;
+      scrollbar-width: thin;
+
+      // >*::-webkit-scrollbar {
+      //     width: 11px;
+      // }
+
+      // >* {
+      //     scrollbar-width: thin;
+      //     scrollbar-color: white;
+      // }
+
+      // >*::-webkit-scrollbar-track {
+      //     background: white;
+      // }
+
+      // >*::-webkit-scrollbar-thumb {
+      //     background-color: white;
+      //     border-radius: 6px;
+      //     border: 3px solid white;
+      // }
+
+      // > *::-webkit-scrollbar-track {
+      //     // background: transparent;
+      // }
+    }
+  }
+
+  .curr_playing {
+    .controls {
+      :first-child * {
+        display: block;
+      }
+    }
+  }
+}
+
+.SongCard {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0;
+  padding: 5px 15px;
+  cursor: pointer;
+
+  &:hover {
+    background: #3a3a3d;
+  }
+
+  .songInfo {
+    display: flex;
+
+    img {
+      margin-right: 10px;
+      width: 40px;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    .title {
+      font-size: 0.8rem;
+      font-weight: 400;
+      // color: #2DCEEF
+    }
+
+    .artiste {
+      font-size: 0.65rem;
+      font-weight: 300;
+      opacity: 0.8;
+    }
+  }
+
+  .controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    * {
+      margin: 5px;
+    }
+
+    :first-child * {
+      display: none;
+    }
+  }
+
+  &:hover {
+    .controls {
+      :first-child * {
+        display: block;
+      }
+    }
+  }
+}

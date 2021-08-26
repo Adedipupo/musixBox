@@ -1,0 +1,231 @@
+.artistBody {
+  min-height: 100vh;
+  width: 100vw;
+  margin-top: 40px;
+  background-color: #161a1a;
+  color: #fff;
+  padding: 50px 150px;
+}
+.artistGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.artistTitle {
+  color: #99999f;
+  font-size: 14px;
+}
+.right {
+  justify-self: right;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  gap: 0.5rem;
+}
+.artistFlex {
+  display: flex;
+  gap: 1rem;
+  height: 100%;
+  align-items: center;
+}
+.artistDets {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.artistBody {
+  min-height: 100vh;
+  width: 100vw;
+  background-color: #161a1a;
+  color: #fff;
+  padding: 50px 150px;
+}
+.artistGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.artistTitle {
+  color: #99999f;
+  font-size: 14px;
+}
+.right {
+  justify-self: right;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  gap: 0.5rem;
+}
+.artistFlex {
+  display: flex;
+  gap: 1rem;
+  height: 100%;
+  align-items: center;
+}
+.artistDets {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.artistImage {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
+}
+.singleArtistBackground {
+  height: 200px;
+}
+.artistName {
+  font-size: 27px;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+.artistDiv p {
+  font-size: 12px;
+}
+.shuffleButton {
+  border: none;
+  padding: 10px 4px;
+  width: 150px;
+  border-radius: 50px;
+  font-size: 12px;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(
+    135deg,
+    rgba(53, 237, 251, 1.9) 0%,
+    rgba(45, 155, 239, 1.9) 40%,
+    rgba(155, 45, 239, 1.9) 100%
+  );
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.shuffleButton:hover {
+  border: 1px solid #fff;
+  background: none;
+}
+.shuffleButton2 {
+  border: none;
+  padding: 10px 4px;
+  width: 150px;
+  border-radius: 50px;
+  font-size: 12px;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(
+    135deg,
+    rgba(53, 237, 251, 1.9) 0%,
+    rgba(45, 155, 239, 1.9) 40%,
+    rgba(155, 45, 239, 1.9) 100%
+  );
+  cursor: pointer;
+  text-transform: uppercase;
+  display: none;
+}
+.followButton {
+  border: 1px solid #fff;
+  padding: 10px 4px;
+  width: 150px;
+  border-radius: 50px;
+  font-size: 12px;
+  text-align: center;
+  color: #fff;
+  background: transparent;
+  cursor: pointer;
+  text-transform: uppercase;
+  display: none;
+}
+.buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.icons * {
+  background: transparent !important;
+  margin-left: 12px;
+  border: 1px solid #99999f;
+  padding: 5px;
+  border-radius: 50%;
+  font-size: 30px;
+  cursor: pointer;
+}
+.icon {
+  margin-left: 12px;
+  border: 1px solid #ffffff;
+  fill: #ffffff;
+  padding: 5px;
+  border-radius: 50%;
+  font-size: 30px;
+  cursor: pointer;
+}
+.albumActionIcon:hover {
+  transform: scale(1.05);
+  transition: all ease-in 0.2s;
+}
+.nav {
+  display: flex;
+  gap: 20px;
+  /* margin-bottom: 30px; */
+  font-weight: 600;
+  align-items: baseline;
+}
+.navItem {
+  text-transform: uppercase;
+  font-size: 11px;
+  cursor: pointer;
+}
+.navItem a {
+  text-decoration: none;
+  color: #fff;
+}
+.mobileIcons {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .artistBody {
+    min-height: 100vh;
+    width: 100vw;
+    background-color: #161a1a;
+    color: #fff;
+    padding: 25px 15px;
+    margin-top: 80px;
+  }
+  .icons,
+  .artistTitle,
+  .shuffleButton {
+    display: none;
+  }
+  .artistFlex {
+    flex-direction: column;
+  }
+  .artistGrid {
+    grid-template-columns: 1fr;
+  }
+  .artistName,
+  .nav {
+    display: flex;
+    justify-content: center;
+  }
+  .shuffleButton2,
+  .followButton {
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px 2px;
+    width: 130px;
+    border-radius: 50px;
+    font-size: 8px;
+  }
+  .mobileIcons {
+    display: block;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 800px) {
+  .artistBody {
+    margin-top: 120px;
+  }
+}

@@ -1,0 +1,58 @@
+.flez {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: auto;
+}
+
+.flez :hover {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.genreImg {
+  height: 95px;
+  min-width: 153px;
+  margin: 0 1.1rem;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  position: relative;
+  border-radius: 8px;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.genreImg img {
+  width: 100%;
+  border-radius: 5px;
+  height: 100%;
+  display: block;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.genreImg h3 {
+  font-size: 15px;
+  color: #fff;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  text-transform: uppercase;
+}
+
+.genreImg .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  background: linear-gradient(
+    135deg,
+    rgba(127, 33, 156, 0.8) 0%,
+    rgba(189, 130, 222, 0.8) 40%,
+    rgba(189, 67, 153, 0.6) 100%
+  );
+}
+/*# sourceMappingURL=GenreList.module.css.map */

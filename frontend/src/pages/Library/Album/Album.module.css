@@ -1,0 +1,9 @@
+.no-album-text {
+  text-align: center;
+  font-size: 18px;
+  background: linear-gradient(269deg, #9b2def 0%, #2d9bef 61%, #35edfb 100%) 0% 0% no-repeat padding-box;
+  border-radius: 25px;
+  padding: 0.7rem;
+  margin: 0 auto;
+  width: 40%;
+}

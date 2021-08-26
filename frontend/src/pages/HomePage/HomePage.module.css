@@ -1,0 +1,154 @@
+.home_card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: scroll;
+  padding-top: 1rem;
+}
+
+.titles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 50px 10px 0 0;
+  letter-spacing: 0.24px;
+  color: #ffffff;
+  opacity: 1;
+  padding: 0 2vw;
+}
+
+.titles h1 {
+  display: none;
+}
+
+.home_div {
+  padding: 50px 150px;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.home_div .recent_played {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  margin-top: 30px;
+  overflow-x: scroll;
+}
+
+.home_div .mobile_route {
+  display: none;
+}
+
+.home_div .played_recent h4 {
+  color: #fff;
+  padding: 0 1.1vw;
+  margin-top: 10px;
+}
+
+.home_div .played_recent .genre_P {
+  display: none;
+  color: #fff;
+  padding: 0 2vw;
+  margin: 0;
+}
+
+.home_div .mostPlayed_artist {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 40px 0;
+  overflow-x: scroll;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+}
+
+@media (max-width: 1024px) {
+  .home_div {
+    padding: 50px 50px;
+  }
+}
+
+@media (max-width: 453px) {
+  .home_div {
+    margin: 0;
+    min-height: 100vh;
+    width: 100vw;
+    padding: 0 0.9rem;
+    background: transparent url('../../asset/homepageImages/BG.png') no-repeat;
+    background-size: cover;
+  }
+  .home_div * h4 {
+    padding: 0 5vw !important;
+  }
+  .home_div .mobile_nav {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+  .home_div .titles {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .home_div .titles h4 {
+    display: none;
+  }
+  .home_div .titles h1 {
+    display: block;
+    font-size: 30px;
+    letter-spacing: 0.16px;
+    margin-top: 15px;
+    margin-bottom: 1.5rem;
+    padding-top: 25px;
+  }
+  .home_div .titles i {
+    display: none;
+  }
+  .home_div .mobile_route {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: #fff;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 10px 10px;
+    overflow-x: scroll;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+  }
+  .home_div .mobile_route a {
+    text-align: center;
+    padding-left: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+    white-space: nowrap;
+    padding-bottom: 10px;
+  }
+  .home_div .mobile_route a:hover {
+    color: #99999f !important;
+  }
+  .home_div .played_recent .genre_P {
+    display: block;
+    letter-spacing: 0.08px;
+    color: #99999f;
+    opacity: 1;
+    padding: 0;
+    font-size: 13px;
+    margin: 0 0 0 20px;
+  }
+}
+/*# sourceMappingURL=HomePage.module.css.map */

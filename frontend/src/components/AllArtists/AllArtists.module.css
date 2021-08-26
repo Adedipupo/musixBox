@@ -1,0 +1,42 @@
+.artistImage {
+  border-radius: 50%;
+  width: 145px;
+  height: 145px;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
+}
+.artistName {
+  text-align: center;
+  font-size: 12px;
+}
+.artistLikes {
+  text-align: center;
+  font-size: 11px;
+  color: #99999f;
+}
+.artistLikes * {
+  fill: #99999f !important;
+}
+.artistDiv {
+  cursor: pointer;
+  margin-bottom: 30px;
+  transition: all 0.2s ease-in-out;
+}
+.artistDiv:hover {
+  transform: scale(1.1);
+}
+.artistFlex {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+.left {
+  display: inline-block;
+}
+.section {
+  margin-bottom: 20px;
+}
+@media (max-width: 500px) {
+  .artistFlex {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

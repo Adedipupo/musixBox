@@ -1,0 +1,322 @@
+@import '../../styles/partials/globals';
+
+* {
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+.Player {
+  @include center-item-row;
+  justify-content: space-between;
+  padding: 10px 20px;
+  position: fixed;
+  bottom: 0;
+  width: calc(100vw - 60px);
+  margin: 10px 30px 0px;
+  background: #3a3a3d;
+  height: 70px;
+
+  * {
+    cursor: pointer;
+  }
+
+  .left {
+    @include center-item-row;
+
+    .thumbnail {
+      margin-right: 10px;
+      width: 50px;
+
+      img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+      }
+
+      @media (min-width: $tablet-sm) {
+        margin-right: 10px;
+      }
+    }
+
+    .info {
+      @include center-item-col;
+      align-items: flex-start;
+      justify-content: space-evenly;
+      color: #fff;
+      overflow: hidden;
+
+      h3 {
+        margin-bottom: 5px;
+        font-size: 0.76rem;
+        font-weight: 500;
+        max-width: 200px;
+        white-space: nowrap;
+      }
+
+      h4 {
+        font-size: 0.6rem;
+        font-weight: 300;
+        opacity: 0.8;
+      }
+    }
+
+    .add,
+    .fav {
+      @include center-item-row;
+
+      * {
+        color: #ccc;
+        margin-left: 20px;
+        height: 20px;
+        width: 20px;
+      }
+    }
+  }
+
+  .middle {
+    @include center-item-col;
+    justify-content: flex-start;
+    justify-self: center;
+    max-width: 30%;
+
+    .progress {
+      // height: 40px;
+      @include center-item-row;
+      justify-content: space-around;
+      width: calc(100%-40px);
+
+      // padding: 0 20px;
+      div {
+        width: 200px;
+
+        @media (min-width: $tablet-lg) {
+          width: 350px;
+        }
+
+        @media (min-width: $desktop) {
+          width: 450px;
+        }
+      }
+
+      > p {
+        color: #ddd;
+        margin: 0;
+        padding: 0;
+        font-size: 0.9rem;
+        font-weight: 300;
+
+        &:last-child {
+          color: #aaa;
+        }
+      }
+    }
+
+    .controls {
+      display: flex;
+      width: 100%;
+      @include center-item-row;
+
+      * {
+        margin: 0 5px;
+
+        * {
+          color: #fff;
+        }
+      }
+
+      .shuffle,
+      .repeat {
+        @include center-item-row;
+
+        * {
+          height: 15px;
+          width: 15px;
+          color: #ddd;
+        }
+      }
+
+      .active {
+        * {
+          color: #2dceef;
+        }
+      }
+
+      .next,
+      .prev {
+        @include center-item-row;
+
+        * {
+          height: 20px;
+          width: 20px;
+
+          @media (min-width: $tablet-lg) {
+            height: 25px;
+            width: 25px;
+          }
+        }
+      }
+
+      .play {
+        @include center-item-row;
+
+        * {
+          height: 25px;
+          width: 25px;
+
+          @media (min-width: $tablet-lg) {
+            height: 30px;
+            width: 30px;
+          }
+        }
+      }
+    }
+  }
+
+  .right {
+    * {
+      color: #fff;
+    }
+
+    @include center-item-row;
+    // margin-right: 30px;
+
+    .playing,
+    .speaker {
+      @include center-item-row;
+      margin-right: 20px;
+
+      * {
+        height: 20px;
+        width: 20px;
+        color: inherit;
+
+        // @media(min-width: $tablet-sm) {
+        //   height: 25px;
+        //   width: 25px;
+        // }
+
+        // @media(min-width: $desktop) {
+        //   height: 30px;
+        //   width: 30px;
+        // }
+      }
+    }
+
+    .volume {
+      @include center-item-row;
+
+      input {
+        height: 3px;
+        background: #555;
+        color: #fff;
+        -webkit-appearance: none;
+        width: 80px;
+
+        &::-webkit-slider-thumb {
+          -webkit-appearance: none;
+          appearance: none;
+          width: 5px;
+          height: 5px;
+          border-radius: 50%;
+          background: #fff;
+          cursor: pointer;
+        }
+
+        &::-moz-range-thumb {
+          width: 5px;
+          height: 5px;
+          border-radius: 50%;
+          background: #fff;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  @media (max-width: $tablet-sm) {
+    display: none;
+  }
+}
+
+.MobilePlayer {
+  @include center-item-row;
+  justify-content: space-between;
+  padding: 10px 20px;
+  position: fixed;
+  bottom: 0;
+  width: calc(100vw);
+  margin: 10px 0 0;
+  background: #3a3a3d;
+  height: 60px;
+
+  .info {
+    @include center-item-row;
+    margin-right: 30px;
+    cursor: pointer;
+
+    img {
+      height: 40px;
+      width: 40px;
+      margin-right: 15px;
+    }
+
+    h4 {
+      color: #fff;
+      font-size: 0.9rem;
+      margin: 0;
+      font-weight: 400;
+    }
+  }
+
+  .controls {
+    @include center-item-row;
+
+    .prev {
+      display: none;
+
+      @media (min-width: $mobile-sm) {
+        display: block;
+      }
+    }
+
+    > div {
+      @include center-item-row;
+      margin: 0 5px;
+
+      > * {
+        height: 30px;
+        width: 30px;
+        color: #fff;
+      }
+    }
+
+    .shuffle,
+    .repeat {
+      display: none;
+
+      * {
+        height: 20px;
+        width: 20px;
+      }
+
+      @media (min-width: $mobile-md) {
+        display: flex;
+      }
+    }
+
+    .active {
+      * {
+        color: #2dceef;
+      }
+    }
+  }
+
+  @media (min-width: $mobile-md) {
+    width: calc(100vw - 10px);
+    margin: 10px 5px 0;
+  }
+
+  @media (min-width: $tablet-sm) {
+    display: none;
+  }
+}

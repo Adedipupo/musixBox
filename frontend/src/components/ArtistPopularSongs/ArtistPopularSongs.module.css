@@ -1,0 +1,145 @@
+.popularBody {
+  margin-top: 40px;
+  font-size: 12px;
+}
+.popularTable {
+  width: 100%;
+}
+.popularLoader {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.right {
+  justify-self: right;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  gap: 0.5rem;
+}
+th {
+  text-transform: uppercase;
+  color: #99999f;
+}
+table,
+th,
+td {
+  /* border: 1px solid black; */
+  border-collapse: collapse;
+}
+th,
+td {
+  padding: 15px;
+  text-align: left;
+}
+td {
+  cursor: pointer;
+}
+
+.currentSong {
+  position: relative;
+}
+
+.currentSong:hover {
+  background-color: #313131;
+}
+
+.currentSongBg {
+  background-color: #313131;
+  position: relative;
+}
+
+.iconContainer {
+  display: flex;
+  align-items: center;
+}
+
+.isPlayingIcon {
+  margin-left: 10px;
+  /* margin-top: -23px; */
+}
+
+.playIcon {
+  /* font-size: 12px;
+  margin-top: -20px; */
+}
+
+tr {
+  position: relative;
+}
+
+tr > th:nth-child(1) {
+  width: 4%;
+}
+tr > th:nth-child(2) {
+  width: 25%;
+}
+tr > th:nth-child(3) {
+  width: 22%;
+}
+tr > th:nth-child(4) {
+  width: 28%;
+}
+tr > th:nth-child(5) {
+  width: 5%;
+  display: flex;
+  gap: 10px;
+}
+tr > th:nth-child(6) {
+  width: 6%;
+}
+tr > th:nth-child(7) {
+  width: 5%;
+}
+tr > td:nth-child(1) {
+  float: right;
+  color: #99999f;
+}
+tr > td:nth-child(2) {
+  /* float: right; */
+  color: #99999f;
+  /* display: grid;  */
+  /* align-items: center;
+    justify-content: space-between;
+    width: 100%; */
+}
+img {
+  width: 20px;
+  margin-right: 10px;
+}
+tr > td:nth-child(4) {
+  color: #99999f;
+}
+/* tr > td:nth-child(5) {
+  color: #99999f;
+} */
+.dots {
+  display: none !important;
+}
+
+@media (max-width: 1000px) {
+  .dots {
+    display: block !important;
+  }
+  .add {
+    display: none !important;
+  }
+  th {
+    display: none;
+  }
+  tr > td:nth-child(1),
+  tr > td:nth-child(3),
+  tr > td:nth-child(4) {
+    display: none;
+  }
+  /* .isPlayingIcon {
+    position: absolute;
+    right: 27%;
+    top: 50%;
+  } */
+}

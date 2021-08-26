@@ -1,0 +1,148 @@
+.Queue {
+  width: 300px;
+  max-height: calc(100vh - 180px);
+  position: fixed;
+  bottom: 90px;
+  background: #303033;
+  right: 30px;
+  padding: 10px 0;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: clip;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.Queue .Queue_title {
+  font-weight: 400;
+  letter-spacing: 0.8px;
+  padding: 0 15px;
+}
+
+.Queue .close {
+  cursor: pointer;
+}
+
+.Queue .close * {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: white;
+}
+
+.Queue .upNext {
+  margin-top: 30px;
+  overflow: clip;
+  height: 450px;
+}
+
+.Queue .upNext .head {
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.Queue .upNext .head div {
+  font-size: 0.95rem;
+}
+
+.Queue .upNext .head button {
+  outline: none;
+  border: 1.5px solid #fff;
+  border-radius: 30px;
+  padding: 3px 20px;
+  background: transparent;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.Queue .upNext .list {
+  overflow-y: auto;
+  max-height: 400px;
+  position: relative;
+  padding: 5px 0;
+  scrollbar-color: #fff;
+  scrollbar-width: thin;
+}
+
+.Queue .curr_playing .controls :first-child * {
+  display: block;
+}
+
+.SongCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 5px 0;
+  padding: 5px 15px;
+  cursor: pointer;
+}
+
+.SongCard:hover {
+  background: #3a3a3d;
+}
+
+.SongCard .songInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.SongCard .songInfo img {
+  margin-right: 10px;
+  width: 40px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.SongCard .songInfo .title {
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+.SongCard .songInfo .artiste {
+  font-size: 0.65rem;
+  font-weight: 300;
+  opacity: 0.8;
+}
+
+.SongCard .controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.SongCard .controls * {
+  margin: 5px;
+}
+
+.SongCard .controls :first-child * {
+  display: none;
+}
+
+.SongCard:hover .controls :first-child * {
+  display: block;
+}
+/*# sourceMappingURL=Queue.module.css.map */

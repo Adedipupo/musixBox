@@ -1,0 +1,272 @@
+.bgimage {
+  height: 100vh;
+  background: url('../../assets/one.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+.hText {
+  text-align: center;
+  color: white;
+  margin-top: -50px;
+  margin-bottom: 40px;
+  font: normal normal normal 15px/25px Lato;
+}
+
+.hsmall {
+  text-align: center;
+  color: white;
+  margin-top: 70px;
+}
+
+.buttonOne {
+  width: 248px;
+  border: 2px solid #ffffff;
+  border-radius: 40px;
+  opacity: 1;
+  font-size: 15px;
+}
+
+.buttonTwo {
+  width: 248px;
+  background: transparent
+    linear-gradient(269deg, var(--unnamed-color-9b2def) 0%, var(--unnamed-color-2d9bef) 61%, #35edfb 100%) 0% 0%
+    no-repeat padding-box;
+  background: transparent linear-gradient(269deg, #9b2def 0%, #2d9bef 61%, #35edfb 100%) 0% 0% no-repeat padding-box;
+  border-radius: 40px;
+  opacity: 1;
+  font-size: 15px;
+}
+
+.flow {
+  background: #161a1a 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+.flowsecond {
+  color: var(--unnamed-color-ffffff);
+  text-align: left;
+  margin: auto;
+  font: normal normal normal 10px/20px Lato;
+  letter-spacing: 0.32px;
+  color: #ffffff;
+  opacity: 1;
+}
+
+.find {
+  margin: auto;
+  font: normal normal normal 10px/20px Lato;
+  letter-spacing: 0.32px;
+  color: #ffffff;
+  opacity: 1;
+}
+
+.listen {
+  height: 50vh;
+  width: 100%;
+  background: url('../../assets/listen.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.card {
+  background-color: #161a1a;
+  width: 70%;
+  /* align-items: center; */
+  margin-bottom: 1rem;
+  margin-left: 7rem;
+}
+
+.card2 {
+  background-color: #161a1a;
+  width: 70%;
+  /* align-items: center; */
+  margin-bottom: 1rem;
+  margin-left: 2rem;
+}
+
+.priceButtonOne {
+  width: 248px;
+  height: 40px;
+  margin-left: 8rem;
+  border: 2px solid #ffffff;
+  border-radius: 40px;
+  opacity: 1;
+}
+
+.priceButtonTwo {
+  width: 248px;
+  height: 40px;
+  margin-left: 3rem;
+  background: transparent
+    linear-gradient(269deg, var(--unnamed-color-9b2def) 0%, var(--unnamed-color-2d9bef) 61%, #35edfb 100%) 0% 0%
+    no-repeat padding-box;
+  background: transparent linear-gradient(269deg, #9b2def 0%, #2d9bef 61%, #35edfb 100%) 0% 0% no-repeat padding-box;
+  border-radius: 40px;
+  opacity: 1;
+}
+
+.more {
+  background: var(--unnamed-color-161a1a) 0% 0% no-repeat padding-box;
+  background: #161a1a 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+@media only screen and (max-width: 1278px) {
+  .card {
+    background-color: #161a1a;
+    /* align-items: center; */
+    justify-content: center;
+    width: 60%;
+    margin-bottom: 1rem;
+  }
+  .card2 {
+    background-color: #161a1a;
+    /* align-items: center; */
+    justify-content: center;
+    width: 60%;
+    margin-bottom: 1rem;
+  }
+  .priceButtonOne {
+    /* display: none; */
+    width: 200px;
+    height: 44px;
+    margin-left: 1.5rem;
+    border: 2px solid #ffffff;
+    border-radius: 40px;
+    opacity: 1;
+  }
+  .priceButtonTwo {
+    /* display: none; */
+    width: 200px;
+    height: 44px;
+    margin-left: 1.5rem;
+    background: transparent
+      linear-gradient(269deg, var(--unnamed-color-9b2def) 0%, var(--unnamed-color-2d9bef) 61%, #35edfb 100%) 0% 0%
+      no-repeat padding-box;
+    background: transparent linear-gradient(269deg, #9b2def 0%, #2d9bef 61%, #35edfb 100%) 0% 0% no-repeat padding-box;
+    border-radius: 40px;
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 992px) and (min-width: 700px) {
+  .showme {
+    display: none;
+  }
+  .card {
+    background-color: #161a1a;
+    justify-content: center;
+    width: 240px !important;
+    margin-left: 25px;
+    /* float: left; */
+  }
+  .card2 {
+    background-color: #161a1a;
+    justify-content: center;
+    width: 240px !important;
+    margin-left: 130px;
+    /* float: left; */
+  }
+  .priceButtonOne {
+    /* display: none; */
+    width: 170px;
+    height: 44px;
+    margin-left: 3rem;
+    border: 2px solid #ffffff;
+    border-radius: 40px;
+    opacity: 1;
+  }
+  .priceButtonTwo {
+    /* display: none; */
+    width: 170px;
+    height: 44px;
+    margin-left: 10rem;
+    background: transparent linear-gradient(269deg, #9b2def 0%, #2d9bef 61%, #35edfb 100%) 0% 0% no-repeat padding-box;
+    border-radius: 40px;
+    opacity: 1;
+  }
+}
+
+@media (max-width: 767px) {
+  .hText {
+    text-align: center;
+    color: white;
+    margin-top: 70px;
+    margin-bottom: 30px;
+    font-size: 25px;
+    margin-bottom: 5rem;
+  }
+  .hsmall {
+    text-align: center;
+    color: white;
+    margin-top: 70px;
+  }
+  .find {
+    margin-top: 2rem;
+    font: normal normal normal 10px/20px Lato;
+    letter-spacing: 0.32px;
+    color: #ffffff;
+    opacity: 1;
+  }
+  .buttonOne {
+    width: 248px;
+    height: 44px;
+    border: 1.5px solid var(--unnamed-color-ffffff);
+    border: 2px solid #ffffff;
+    border-radius: 40px;
+    opacity: 1;
+    margin: 10px auto;
+  }
+  .buttonTwo {
+    width: 248px;
+    height: 44px;
+    border: 1.5px solid var(--unnamed-color-ffffff);
+    border: 2px solid #ffffff;
+    border-radius: 40px;
+    opacity: 1;
+    margin: 0 auto;
+  }
+  .card {
+    background-color: #161a1a;
+    justify-content: center;
+    width: 75% !important;
+    margin: auto;
+  }
+  .card2 {
+    background-color: #161a1a;
+    justify-content: center;
+    width: 75% !important;
+    margin: auto;
+  }
+  .priceButtonOne {
+    width: 50%;
+    height: 35px;
+    margin: auto;
+    margin-bottom: 1rem;
+    border: 2px solid #ffffff;
+    border-radius: 40px;
+    opacity: 1;
+  }
+  .priceButtonTwo {
+    width: 60%;
+    height: 35px;
+    margin: auto;
+    background: transparent linear-gradient(269deg, #9b2def 0%, #2d9bef 61%, #35edfb 100%) 0% 0% no-repeat padding-box;
+    border-radius: 40px;
+    opacity: 1;
+  }
+  .priceButtonDiv {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    height: 20px;
+  }
+}

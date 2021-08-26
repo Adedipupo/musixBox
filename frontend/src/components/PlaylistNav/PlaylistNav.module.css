@@ -1,0 +1,64 @@
+.browse_route {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.allRoute {
+  position: absolute;
+  top: 15px;
+  left: 50vw;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  white-space: nowrap;
+}
+
+.allRoute .browse_route {
+  padding-left: 1.5rem;
+}
+
+.allRoute .browse_route a {
+  text-decoration: none;
+  color: #99999f;
+}
+
+.allRoute .browse_route a:hover {
+  color: #fff;
+}
+
+.allRoute .navList {
+  background-image: -webkit-gradient(linear, left top, right top, from(#9b2def), to(#2dceef));
+  background-image: linear-gradient(to right, #9b2def 0%, #2dceef 100%);
+  opacity: 1;
+  background-position: 60% 100%;
+  background-repeat: no-repeat;
+  background-size: 50px 3px;
+}
+
+@media only screen and (max-width: 415px) {
+  .allRoute {
+    position: relative;
+    margin: auto;
+    -webkit-transform: translateX(calc(-50% - 25px));
+    transform: translateX(calc(-50% - 25px));
+  }
+  .allRoute .browse_route {
+    padding-left: 0.7rem;
+  }
+}
+
+@media only screen and (min-width: 990px) and (max-width: 1200px) {
+  .allRoute {
+    top: 60px;
+  }
+}
+/*# sourceMappingURL=PlaylistNav.module.css.map */

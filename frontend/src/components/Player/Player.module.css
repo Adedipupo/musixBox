@@ -1,0 +1,484 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+.Player {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 10px 20px;
+  position: fixed;
+  bottom: 0;
+  width: calc(100vw - 60px);
+  margin: 10px 30px 0px;
+  background: #3a3a3d;
+  height: 70px;
+}
+
+.Player * {
+  cursor: pointer;
+}
+
+.Player .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.Player .left .thumbnail {
+  margin-right: 10px;
+  width: 50px;
+}
+
+.Player .left .thumbnail img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (min-width: 978px) {
+  .Player .left .thumbnail {
+    margin-right: 10px;
+  }
+}
+
+.Player .left .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  color: #fff;
+}
+
+.Player .left .info h3 {
+  margin-bottom: 5px;
+  font-size: 0.76rem;
+  font-weight: 500;
+}
+
+.Player .left .info h4 {
+  font-size: 0.6rem;
+  font-weight: 300;
+  opacity: 0.8;
+}
+
+.Player .left .add,
+.Player .left .fav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.Player .left .add *,
+.Player .left .fav * {
+  color: #ccc;
+  margin-left: 20px;
+  height: 20px;
+  width: 20px;
+}
+
+.Player .middle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  justify-self: center;
+  max-width: 30%;
+}
+
+.Player .middle .progress {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  width: calc(100%-40px);
+}
+
+.Player .middle .progress div {
+  width: 200px;
+}
+
+@media (min-width: 1024px) {
+  .Player .middle .progress div {
+    width: 350px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .Player .middle .progress div {
+    width: 450px;
+  }
+}
+
+.Player .middle .progress > p {
+  color: #ddd;
+  margin: 0;
+  padding: 0;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+.Player .middle .progress > p:last-child {
+  color: #aaa;
+}
+
+.Player .middle .controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.Player .middle .controls * {
+  margin: 0 5px;
+}
+
+.Player .middle .controls * * {
+  color: #fff;
+}
+
+.Player .middle .controls .shuffle,
+.Player .middle .controls .repeat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.Player .middle .controls .shuffle *,
+.Player .middle .controls .repeat * {
+  height: 15px;
+  width: 15px;
+  color: #ddd;
+}
+
+.Player .middle .controls .active * {
+  color: #2dceef;
+}
+
+.Player .middle .controls .next,
+.Player .middle .controls .prev {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.Player .middle .controls .next *,
+.Player .middle .controls .prev * {
+  height: 20px;
+  width: 20px;
+}
+
+@media (min-width: 1024px) {
+  .Player .middle .controls .next *,
+  .Player .middle .controls .prev * {
+    height: 25px;
+    width: 25px;
+  }
+}
+
+.Player .middle .controls .play {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.Player .middle .controls .play * {
+  height: 25px;
+  width: 25px;
+}
+
+@media (min-width: 1024px) {
+  .Player .middle .controls .play * {
+    height: 30px;
+    width: 30px;
+  }
+}
+
+.Player .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.Player .right * {
+  color: #fff;
+}
+
+.Player .right .playing,
+.Player .right .speaker {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-right: 20px;
+}
+
+.Player .right .playing *,
+.Player .right .speaker * {
+  height: 20px;
+  width: 20px;
+  color: inherit;
+}
+
+.Player .right .volume {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.Player .right .volume input {
+  height: 3px;
+  background: #555;
+  color: #fff;
+  -webkit-appearance: none;
+  width: 80px;
+}
+
+.Player .right .volume input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+}
+
+.Player .right .volume input::-moz-range-thumb {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+}
+
+@media (max-width: 978px) {
+  .Player {
+    display: none;
+  }
+}
+
+.MobilePlayer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 10px 20px;
+  position: fixed;
+  bottom: 0;
+  width: calc(100vw);
+  margin: 10px 0 0;
+  background: #3a3a3d;
+  height: 60px;
+}
+
+.MobilePlayer .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-right: 30px;
+}
+
+.MobilePlayer .info img {
+  height: 40px;
+  width: 40px;
+  margin-right: 15px;
+}
+
+.MobilePlayer .info h4 {
+  color: #fff;
+  font-size: 0.9rem;
+  margin: 0;
+  font-weight: 400;
+}
+
+.MobilePlayer .controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.MobilePlayer .controls .prev {
+  display: none;
+}
+
+@media (min-width: 425px) {
+  .MobilePlayer .controls .prev {
+    display: block;
+  }
+}
+
+.MobilePlayer .controls > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0 5px;
+}
+
+.MobilePlayer .controls > div > * {
+  height: 30px;
+  width: 30px;
+  color: #fff;
+}
+
+.MobilePlayer .controls .shuffle,
+.MobilePlayer .controls .repeat {
+  display: none;
+}
+
+.MobilePlayer .controls .shuffle *,
+.MobilePlayer .controls .repeat * {
+  height: 20px;
+  width: 20px;
+}
+
+@media (min-width: 678px) {
+  .MobilePlayer .controls .shuffle,
+  .MobilePlayer .controls .repeat {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.MobilePlayer .controls .active * {
+  color: #2dceef;
+}
+
+@media (min-width: 678px) {
+  .MobilePlayer {
+    width: calc(100vw - 10px);
+    margin: 10px 5px 0;
+  }
+}
+
+@media (min-width: 978px) {
+  .MobilePlayer {
+    display: none;
+  }
+}
+/*# sourceMappingURL=Player.module.css.map */

@@ -1,0 +1,17 @@
+@mixin center-item-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin center-item-col {
+  @include center-item-row;
+  flex-direction: column;
+}
+
+$mobile-sm: 425px;
+$mobile-md: 678px;
+$mobile-lg: 768px;
+$tablet-sm: 978px;
+$tablet-lg: 1024px;
+$desktop: 1280px;

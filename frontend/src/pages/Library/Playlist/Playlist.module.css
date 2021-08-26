@@ -1,0 +1,19 @@
+:root {
+  background-color: #161a1a;
+}
+
+.card-wrapper {
+  /* border: 1px solid green; */
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.no-artist-text {
+  text-align: center;
+  font-size: 20px;
+  background: linear-gradient(269deg, #9b2def 0%, #2d9bef 61%, #35edfb 100%) 0% 0% no-repeat padding-box;
+  border-radius: 25px;
+  padding: 1rem;
+  margin: 0 auto;
+}

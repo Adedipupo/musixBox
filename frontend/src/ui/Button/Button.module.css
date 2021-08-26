@@ -1,0 +1,15 @@
+.Button {
+  width: 200px;
+  height: 40px;
+  background: salmon;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+.Button:hover {
+  background: red;
+  cursor: pointer;
+  margin: auto;
+}
+/*# sourceMappingURL=Button.module.css.map */

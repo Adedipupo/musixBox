@@ -1,0 +1,48 @@
+.button-card {
+  display: flex;
+  justify-content: space-between;
+}
+.modal-button {
+  width: 160px;
+  height: 40px;
+  border-radius: 40px;
+  background: transparent linear-gradient(269deg, #9b2def 0%, #2d9bef 61%, #35edfb 100%) 0% 0% no-repeat padding-box;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  margin: 1rem;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.modal-button-link {
+  width: 160px;
+  height: 40px;
+  border-radius: 40px;
+  background: transparent;
+  background-repeat: no-repeat;
+  border: 1px solid white;
+  cursor: pointer;
+  margin: 1rem;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.modal-button-link:hover {
+  background: transparent linear-gradient(269deg, #9b2def 0%, #2d9bef 61%, #35edfb 100%) 0% 0% no-repeat padding-box;
+}
+
+.modal-button:hover {
+  border: 1px solid white;
+  background: transparent;
+}
+
+.disabled {
+  opacity: 0.9;
+  cursor: not-allowed;
+  width: 160px;
+  height: 40px;
+  border-radius: 40px;
+  background-color: transparent;
+  border: 1px solid grey;
+  margin: 1rem;
+}

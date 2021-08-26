@@ -1,0 +1,60 @@
+.artistImage {
+  border-radius: 50%;
+  width: 149px;
+  height: 149px;
+  background-color: #99999f;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
+}
+.artistLoader {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.artistName {
+  text-align: center;
+  font-size: 12px;
+  margin-top: 12px;
+}
+.artistDiv {
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  transition: all 0.2s ease-in-out;
+}
+.artistDiv:hover {
+  transform: scale(1.1);
+}
+.artistFlex {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: auto;
+  gap: 20px;
+}
+/* .artistFlex::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.artistFlex::-webkit-scrollbar {
+  height: 8px;
+}
+
+.artistFlex::-webkit-scrollbar-thumb {
+  background-color: #272a34;
+  border-radius: 4px;
+} */
+
+.left {
+  display: inline-block;
+}
+.right {
+  display: inline;
+  float: right;
+  color: #d5d5d5;
+  font-size: 12px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.section {
+  margin-bottom: 20px;
+}
